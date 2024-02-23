@@ -1,0 +1,14 @@
+N=int(input())
+A=list(map(int,input().split()))
+count=0
+ bubbleSort(A,N):
+    flag =True
+    while flag:
+        flag=False
+        for j in range(N-1,1,-1):
+            if A[j] <A[j-1]:
+                A[j],A[j-1]=A[j-1],A[j]
+                flag=True
+bubbleSort(A,N)
+print(count)
+print(A)
